@@ -1,24 +1,10 @@
-
-import firebase from 'firebase/app'
-import 'firebase/firestore'
-import 'firebase/auth'
-
-import {useAuthState} from 'react-firebase-hooks/auth'
-import {useCollectionData} from 'react-firebase-hooks/firestore'
-
-
-firebase.initializeApp({
-
-})
-
-const auth = firebase.auth()
-const firestore = firebase.firestore()
-
-
+import Auth from "./Page/Auth/Auth";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.scss'
 function App() {
   return (
     <div className="App">
-     a
+     <Auth/>
     </div>
   );
 }
